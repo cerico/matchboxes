@@ -5,63 +5,63 @@
       "price": 12.50,
       "tax": 7,
       "name": "maersk",
-      "image": "https://s3.amazonaws.com/matchboxu/u1.jpg"
+      "image": "http://localhost:3404/public/u1.jpg"
     }, {
       "id": 2,
       "price": 8.99,
       "tax": 7,
       "name": "barnwick",
-      "image": "https://s3.amazonaws.com/matchboxu/u10.jpg"
+      "image": "http://localhost:3404/public/u10.jpg"
     }, {
       "id": 3,
       "price": 19.00,
       "tax": 7,
       "name": "padiham",
-      "image": "https://s3.amazonaws.com/matchboxu/u11.jpg"
+      "image": "http://localhost:3404/public/u11.jpg"
     },
     {
       "id": 4,
       "price": 12.50,
       "tax": 7,
       "name": "stablo",
-      "image": "https://s3.amazonaws.com/matchboxu/u3.jpg"
+      "image": "http://localhost:3404/public/u3.jpg"
     }, {
       "id": 5,
       "price": 8.99,
       "tax": 7,
       "name": "pern",
-      "image": "https://s3.amazonaws.com/matchboxu/u4.jpg"
+      "image": "http://localhost:3404/public/u4.jpg"
     }, {
       "id": 6,
       "price": 19.00,
       "tax": 10,
       "name": "bala",
-      "image": "https://s3.amazonaws.com/matchboxu/u5.jpg"
+      "image": "http://localhost:3404/public/u5.jpg"
     },
     {
       "id": 7,
       "price": 12.50,
       "tax": 15,
       "name": "havemayer",
-      "image": "https://s3.amazonaws.com/matchboxu/u6.jpg"
+      "image": "http://localhost:3404/public/u6.jpg"
     }, {
       "id": 8,
       "price": 8.99,
       "tax": 15,
       "name": "falkirk",
-      "image": "https://s3.amazonaws.com/matchboxu/u7.jpg"
+      "image": "http://localhost:3404/public/u7.jpg"
     }, {
       "id": 9,
       "price": 19.00,
       "tax": 10,
       "name": "llan",
-      "image": "https://s3.amazonaws.com/matchboxu/u8.jpg"
+      "image": "http://localhost:3404/public/u8.jpg"
     }, {
       "id": 10,
       "price": 19.00,
       "tax": 10,
       "name": "teuk",
-      "image": "https://s3.amazonaws.com/matchboxu/u9.jpg"
+      "image": "http://localhost:3404/public/u9.jpg"
     }
   ]
 }
