@@ -30,7 +30,6 @@ const addedIds = (state = initialState.addedIds, action) => {
 }
 
 const cart = (state = initialState, action) => {
-  console.log("f")
       return {
         addedIds: addedIds(state.addedIds, action)
       }

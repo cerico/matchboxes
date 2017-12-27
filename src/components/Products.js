@@ -4,7 +4,7 @@ const classNames = require('classnames');
 import styles from './products.css';
 import { addToCart } from '../actions'
 import ProductItem from './ProductItem';
-import CartContainer from './CartContainer'
+import Cart from './Cart'
 
 const Products = ({products, addToCart}) =>  {
 
@@ -16,7 +16,7 @@ const Products = ({products, addToCart}) =>  {
 
   return(
     <div className={styles.grid} style={style.general}>
-      <CartContainer className={styles.product}/>
+      <Cart className={styles.product}/>
         {products.length > 0 ? 
           products.map((product, index) =>
             <ProductItem product={product} onAddToCartClicked={() => addToCart(product.id)} key={index}/>) 

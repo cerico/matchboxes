@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import MdHighlightOff from 'react-icons/lib/md/highlight-off';
 import {selectProduct} from '../utils';
 import style from './product.css'
-import CartContainer from './CartContainer'
+import Cart from './Cart'
 import { addToCart } from '../actions'
 
 const Product = (props) => {
@@ -28,7 +28,7 @@ const Product = (props) => {
                 <span className={style.country}> ({props.product.country})</span> 
               </h1> 
               <div className={style.description}></div>  
-              <CartContainer />
+              <Cart />
             </div>
           </div>       
         </div>

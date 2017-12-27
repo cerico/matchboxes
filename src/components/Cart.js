@@ -1,30 +1,35 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { checkout, removeFromCart } from "../actions";
+import { getTotal, getCartProducts, getTax } from "../utils";
+import Tally from "../components/Tally";
 
-const Cart  = ({ products, tax, total  }) => {
-  const hasProducts = products.length > 0
-  const style = {
-    top: {
-      fontFamily: 'roboto',
-      fontSize: '1.3rem',
-    }
-  }
-  if (hasProducts)
-    return (
-      <div style={style.top}>
-        <p>Total: {total }(inc {tax} tax)</p>
-        <Link to="/checkout">
-          <button>checkout</button>
-        </Link>
-      </div>     
-    )
-    return (
-      <div>
-        <em>Your cart is currently empty.</em>
-      </div>
-  )
-}
+import styles from './product.css';
+
+import CartItems from './CartItems';
+
+const CartContainer = ({ tax,className, products, total}) =>
+  <article className={className} style={{paddingLeft:'4rem'}}>
+    <h2 style={{fontFamily:'raleway'}}>Cart</h2>
+
+    <CartItems />
+
+    <Tally
+      products={products}
+      total={total}
+      tax={tax}
+      />
+  </article>;
+
+const mapStateToProps = state => {
+  return ({  
+  products: getCartProducts(state),
+  total: getTotal(getCartProducts(state)),
+  tax: getTax(getCartProducts(state)),
+  })
+};
 
 
-export default Cart
+
+export default connect(mapStateToProps, { })(CartContainer);

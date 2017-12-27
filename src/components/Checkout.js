@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getTotal, getCartProducts, getTax } from "../utils";
-import Cart from "./Cart";
+import Tally from "./Tally";
 
-import TableCart from './TableCart';
+import CartItems from './CartItems';
 
 const style = {
   field:  {
@@ -61,8 +61,8 @@ const CheckoutContainer = ({ tax, className, products, total }) =>
   <article className={className} style={{'width':'40%','float':'right'}}>
     <h2 style={{fontFamily:'raleway'}} >Cart</h2>
 
-    <TableCart total={total}/>
-    <Cart
+    <CartItems total={total}/>
+    <Tally
       products={products}
       total={total}
       tax={tax}

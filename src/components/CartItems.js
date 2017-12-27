@@ -4,7 +4,7 @@ import { removeFromCart, updateCart } from "../actions";
 import { getCartProducts,getTotal, getTax  } from "../utils";
 import MdHighlightOff from 'react-icons/lib/md/highlight-off';
 
-class TableCart extends React.Component {
+class CartItems extends React.Component {
   constructor(props) {
     super(props); 
   }
@@ -13,8 +13,7 @@ class TableCart extends React.Component {
  
     if (parseInt(event.target.value) > -1 ){
       this.props.updateCart(productId,event.target.value)
-    } 
-   
+    }
   }
 
   render() {
@@ -64,4 +63,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { removeFromCart , updateCart, getTotal, getTax }
-)(TableCart);
+)(CartItems);
